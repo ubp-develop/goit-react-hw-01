@@ -21,5 +21,6 @@
 }
 .friendList {
   display: flex;
-  gap: 12%;
+  gap: 8%;
+  justify-content: flex-end;
 }

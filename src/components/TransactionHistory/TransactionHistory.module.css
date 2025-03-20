@@ -41,3 +41,26 @@
 .table .button:hover {
   background-color: #0056b3;
 }
+.transactionHistory {
+  width: 100%;
+  border-collapse: collapse; /* Забезпечує правильне відображення рамок */
+  margin-top: 20px; /* Відступ зверху */
+}
+.transactionHistory th,
+.transactionHistory td {
+  border: 1px solid #ddd; /* Рамки комірок */
+  padding: 10px; /* Відступи всередині комірок */
+  text-align: left; /* Вирівнювання тексту */
+}
+
+.transactionHistory thead {
+  background-color: #f4f4f4; /* Фон заголовка */
+}
+
+.transactionHistory tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Чередування кольору рядків */
+}
+
+.transactionHistory tbody tr:hover {
+  background-color: #e3e3e3; /* Виділення при наведенні */
+}
