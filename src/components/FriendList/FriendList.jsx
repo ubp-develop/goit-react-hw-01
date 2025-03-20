@@ -1,17 +1,13 @@
 import PropTypes from "prop-types";
+import FriendListItem from "./FriendListItem";
 import styles from "./FriendList.module.css";
-import FriendListItem from "./FriendListItem/FriendListItem";
 
 const FriendList = ({ friends }) => {
   return (
-    <ul className={styles.list}>
+    <ul className={styles.friendList}>
       {friends.map((friend) => (
         <li key={friend.id} className={styles.item}>
-          <FriendListItem
-            avatar={friend.avatar}
-            name={friend.name}
-            isOnline={friend.isOnline}
-          />
+          <FriendListItem {...friend} />
         </li>
       ))}
     </ul>
@@ -21,12 +17,12 @@ const FriendList = ({ friends }) => {
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
     })
-  ).isRequired, // <-- Прибрана зайва крапка з комою
+  ).isRequired,
 };
 
 export default FriendList;

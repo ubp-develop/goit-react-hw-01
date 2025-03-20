@@ -1,0 +1,43 @@
+/* TransactionHistory.module.css */
+
+/* Основні стилі таблиці */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль заголовків таблиці */
+.table th {
+  background-color: #f4f4f4;
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: bold;
+}
+
+/* Стиль рядків таблиці */
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Чередування кольорів для рядків таблиці */
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Стиль для кнопок у таблиці, якщо є */
+.table .button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.table .button:hover {
+  background-color: #0056b3;
+}

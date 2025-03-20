@@ -19,3 +19,7 @@
 .offline {
   color: red;
 }
+.friendList {
+  display: flex;
+  gap: 12%;
+}
